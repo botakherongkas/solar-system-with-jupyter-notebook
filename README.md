@@ -1,38 +1,43 @@
-# Simulasi Tata Surya Menggunakan Python
+# Solar System Simulation Using Python
 
-## Deskripsi
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Proyek ini merupakan simulasi visual tata surya yang dikembangkan menggunakan Python dalam lingkungan Jupyter Notebook. Tujuan utama proyek ini adalah memvisualisasikan pergerakan planet mengelilingi Matahari melalui animasi dua dimensi sekaligus memperkenalkan penerapan konsep matematika dan pemrograman dalam simulasi ilmiah.
+*A simple computational simulation of the Solar System built with Python and Matplotlib.*
 
-Seluruh simulasi dibangun menggunakan pendekatan numerik sederhana dengan memanfaatkan fungsi trigonometri untuk menghitung posisi setiap planet pada setiap langkah waktu. Meskipun model yang digunakan belum merepresentasikan dinamika tata surya secara fisik, proyek ini dirancang sebagai media pembelajaran untuk memahami dasar-dasar visualisasi data, animasi, serta simulasi komputasi.
+## Overview
 
-Selain menghasilkan animasi yang interaktif, proyek ini juga menjadi sarana untuk mempelajari bagaimana sebuah permasalahan ilmiah dapat diterjemahkan ke dalam bentuk algoritma dan divisualisasikan menggunakan Python.
+This project presents a simple two-dimensional simulation of the Solar System developed using Python in a Jupyter Notebook environment. The simulation visualizes the Sun and the eight planets orbiting around it while demonstrating the application of mathematical concepts, scientific visualization, and animation techniques.
 
----
-
-## Tujuan Proyek
-
-Proyek ini dikembangkan dengan beberapa tujuan utama, yaitu:
-
-- Mempelajari dasar-dasar simulasi komputasi menggunakan Python.
-- Memahami penerapan fungsi trigonometri dalam menghitung posisi objek yang bergerak.
-- Mengembangkan kemampuan membuat animasi menggunakan Matplotlib.
-- Melatih penggunaan NumPy dalam pengolahan data numerik.
-- Membangun pemahaman mengenai proses visualisasi fenomena astronomi secara sederhana.
+The primary objective of this project is educational rather than astronomical accuracy. It was created to explore how mathematical models can be translated into interactive visualizations using Python and to strengthen fundamental programming skills through a practical application.
 
 ---
 
-## Teknologi yang Digunakan
+## Objectives
 
-Proyek ini dibangun menggunakan beberapa pustaka Python berikut.
+This project was developed to:
 
-- **Python 3**
-- **NumPy**
-- **Matplotlib**
-- **IPython Display**
-- **Jupyter Notebook**
+- Learn the fundamentals of scientific computing with Python.
+- Understand how trigonometric functions can model orbital motion.
+- Explore animation techniques using Matplotlib.
+- Practice numerical computation with NumPy.
+- Build a structured and reproducible simulation in Jupyter Notebook.
 
-Instalasi dependensi dapat dilakukan dengan perintah berikut.
+---
+
+## Technologies Used
+
+The project is built using the following libraries:
+
+- Python 3
+- NumPy
+- Matplotlib
+- IPython Display
+- Jupyter Notebook
+
+Install the required dependencies with:
 
 ```bash
 pip install numpy matplotlib notebook
@@ -40,82 +45,82 @@ pip install numpy matplotlib notebook
 
 ---
 
-## Cara Menjalankan
+## Running the Project
 
-1. Jalankan Jupyter Notebook atau JupyterLab.
-2. Buka file `Simulasi_Tata_Surya.ipynb`.
-3. Eksekusi seluruh sel secara berurutan.
-4. Tunggu proses pembuatan animasi hingga selesai.
-5. Animasi akan ditampilkan secara langsung pada notebook.
-
----
-
-## Struktur Program
-
-Notebook disusun secara modular agar setiap tahapan simulasi mudah dipahami, meliputi:
-
-- Import library.
-- Inisialisasi parameter simulasi.
-- Pendefinisian data planet.
-- Perhitungan posisi setiap planet.
-- Pembuatan objek visualisasi.
-- Animasi pergerakan planet.
-- Rendering hasil simulasi.
+1. Launch Jupyter Notebook or JupyterLab.
+2. Open `Solar_System_Simulation.ipynb`.
+3. Run all notebook cells sequentially.
+4. Wait for the animation to finish rendering.
+5. The simulation will be displayed directly inside the notebook.
 
 ---
 
-## Metodologi
+## Project Structure
 
-Posisi setiap planet dihitung menggunakan persamaan parametrik lingkaran dengan memanfaatkan fungsi sinus dan cosinus. Pada setiap frame animasi, koordinat planet diperbarui berdasarkan waktu simulasi sehingga menghasilkan ilusi gerak mengelilingi Matahari.
+The notebook is organized into several sections:
 
-Pendekatan ini dipilih karena sederhana, mudah dipahami, dan sesuai untuk memperkenalkan konsep dasar simulasi komputasi. Parameter seperti jari-jari orbit, ukuran planet, serta kecepatan revolusi telah disederhanakan agar simulasi tetap ringan dijalankan tanpa mengurangi nilai edukatifnya.
+- Library imports
+- Simulation parameters
+- Planet data initialization
+- Orbital position calculations
+- Animation setup
+- Rendering the simulation
 
-Perlu dicatat bahwa proyek ini bukan merupakan simulator astronomi berpresisi tinggi. Fokus utama proyek adalah membangun pemahaman mengenai hubungan antara konsep matematika, algoritma, dan visualisasi menggunakan Python.
-
----
-
-## Fitur
-
-Simulasi yang dihasilkan memiliki beberapa fitur berikut.
-
-- Visualisasi Matahari sebagai pusat tata surya.
-- Delapan planet dengan warna yang berbeda.
-- Animasi revolusi planet.
-- Jejak lintasan (orbit trail) setiap planet.
-- Label nama planet.
-- Informasi waktu simulasi hingga ratusan juta tahun.
-- Tampilan yang dioptimalkan untuk dijalankan di Jupyter Notebook.
+This modular structure makes the code easier to understand, modify, and extend.
 
 ---
 
-## Hasil Pembelajaran
+## Methodology
 
-Melalui pengembangan proyek ini, beberapa kompetensi yang berhasil dipelajari antara lain:
+Each planet's position is calculated using the parametric equations of a circle based on sine and cosine functions. During every animation frame, new coordinates are computed according to the simulated time, creating the appearance of continuous orbital motion around the Sun.
 
-- Penggunaan **NumPy** untuk komputasi numerik.
-- Pembuatan visualisasi menggunakan **Matplotlib**.
-- Implementasi animasi menggunakan **FuncAnimation**.
-- Pemodelan gerak melingkar menggunakan fungsi trigonometri.
-- Penyusunan kode Python yang terstruktur dalam bentuk notebook.
-- Dasar-dasar pengembangan simulasi ilmiah berbasis Python.
+To keep the simulation lightweight and easy to understand, orbital distances, planetary sizes, and revolution speeds are simplified rather than based on real astronomical measurements. This approach allows the project to focus on computational concepts while remaining visually intuitive.
 
 ---
 
-## Pengembangan Selanjutnya
+## Features
 
-Masih terdapat berbagai peluang pengembangan agar simulasi menjadi lebih realistis maupun lebih kompleks, di antaranya:
+The simulation includes:
 
-- Mengimplementasikan orbit berbentuk elips berdasarkan Hukum Kepler.
-- Menggunakan data astronomi aktual untuk ukuran, periode revolusi, dan jarak orbit.
-- Menambahkan satelit alami pada setiap planet.
-- Menambahkan asteroid belt dan objek langit lainnya.
-- Mengimplementasikan simulasi gravitasi menggunakan pustaka **REBOUND**.
-- Menambahkan fitur kontrol interaktif, seperti zoom, percepatan waktu, dan pemilihan planet.
+- The Sun positioned at the center of the Solar System.
+- Eight planets with individual colors.
+- Animated planetary orbits.
+- Orbital trails for each planet.
+- Planet labels.
+- A simulation timeline representing approximately 230 million years.
 
 ---
 
-## Kesimpulan
+## Learning Outcomes
 
-Proyek ini merupakan implementasi sederhana dari konsep simulasi komputasi menggunakan Python. Walaupun model yang digunakan masih bersifat edukatif dan belum mempertimbangkan interaksi gravitasi maupun data astronomi yang sebenarnya, proyek ini berhasil menunjukkan bagaimana konsep matematika dapat diterapkan untuk menghasilkan visualisasi yang informatif dan interaktif.
+Through this project, I gained practical experience in:
 
-Bagi saya, proyek ini menjadi langkah awal dalam mempelajari scientific computing, visualisasi data, dan pemrograman berbasis simulasi. Selain meningkatkan pemahaman terhadap Python, proyek ini juga memberikan pengalaman dalam menerjemahkan konsep ilmiah menjadi sebuah aplikasi yang dapat diamati secara visual. Ke depannya, proyek ini akan terus dikembangkan dengan model fisika yang lebih akurat dan fitur yang lebih komprehensif sebagai bagian dari proses belajar di bidang komputasi dan robotika.
+- Scientific computing with NumPy.
+- Data visualization using Matplotlib.
+- Creating animations with `FuncAnimation`.
+- Applying trigonometric functions to simulate motion.
+- Organizing Python projects in Jupyter Notebook.
+- Translating mathematical concepts into computational models.
+
+Beyond programming, this project also strengthened my understanding of how visualization can be used to communicate scientific concepts effectively.
+
+---
+
+## Future Improvements
+
+Several enhancements can be implemented in future versions, including:
+
+- Elliptical orbits based on Kepler's laws.
+- Real astronomical data for planetary size, distance, and orbital periods.
+- Gravitational interactions between celestial bodies.
+- Natural satellites and asteroid belts.
+- Interactive controls for zooming and simulation speed.
+- Integration with the REBOUND N-body simulation library for more realistic physics.
+
+---
+
+## Conclusion
+
+This project represents an early exploration of scientific visualization and computational simulation using Python. While the current implementation intentionally simplifies many aspects of celestial mechanics, it demonstrates the fundamental relationship between mathematics, programming, and visualization.
+
+Developing this simulation allowed me to strengthen my Python programming skills while gaining a deeper appreciation for how computational methods can be used to model real-world phenomena. It also serves as a foundation for future projects involving numerical simulation, data visualization, and scientific computing.
